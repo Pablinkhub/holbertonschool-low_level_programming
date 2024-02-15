@@ -2,7 +2,7 @@
 /**
 * main - "Descripción generica"
 *
-* Return: "Algo que devuelve"
+* Return: "Always(0)"
 */
 int main(void)
 {
