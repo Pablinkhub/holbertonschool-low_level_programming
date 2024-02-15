@@ -1,7 +1,7 @@
 /*Incluyo la libreria <studio.h> donde está incluida la función "puts"*/
 #include<stdio.h>
 /**
- * main - Entry point
+ * main - 8==D
  *
  * Return: Always 0 (Success)
  */
