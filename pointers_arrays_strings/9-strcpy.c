@@ -2,9 +2,9 @@
 /**
  * _strcpy - HA
  *
- *@src: a
- *@dest: b
- *Return: 0
+ *@src: copiado
+ *@dest: destino del copiado
+ *Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {

@@ -7,7 +7,6 @@
  *
  *@n: Number
  *
- *Return: Algo
  */
 void print_array(int *a, int n)
 {
