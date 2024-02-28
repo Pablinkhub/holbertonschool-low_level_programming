@@ -2,31 +2,35 @@
 /**
  * _atoi - function that convert a string to an integer.
  *
- * @s: ea
+ *@s: Ayuda
  *
- *Return: Nose
- *
+ *Return: aaa
  */
 int _atoi(char *s)
 {
-	int r = 0;
-	int f = 1;
+	int result = 0;
+	int sign = 1;
+	int started = 0;
 
 	for (; *s; s++)
 	{
 		if (*s == '-')
 		{
-			f *= -1;
+			sign = -sign;
 		}
-		else if (*s >= '0' && *s <= '9')
+		if (*s >= '0' && *s <= '9')
 		{
-			r = r * 10 + (*s - '0');
+			if (!started)
+				started = 1;
+			result = result * 10 + (*s - '0');
 		}
-		if (*(s + 1) < '0' || *(s + 1) > '9')
+		else if (started)
 		{
 			break;
 		}
 	}
-	return (r * f);
+	result *= sign;
+
+	return (result);
 }
 
